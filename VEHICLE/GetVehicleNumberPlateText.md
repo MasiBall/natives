@@ -8,11 +8,16 @@ ns: VEHICLE
 char* GET_VEHICLE_NUMBER_PLATE_TEXT(Vehicle vehicle);
 ```
 
-```
-Returns the license plate text from a vehicle.  8 chars maximum.  
-```
-
 ## Parameters
 * **vehicle**: 
 
 ## Return value
+Returns the license plate text from a vehicle. 8 chars maximum.
+
+## Examples
+```lua
+local playerPed = PlayerPedId()
+local vehicle = GetVehiclePedIsIn(playerPed)
+local vehiclePlate = GetVehicleNumberPlateText(vehicle)
+print(vehiclePlate) --prints license plate to console
+```
