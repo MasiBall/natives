@@ -9,7 +9,7 @@ char* GET_VEHICLE_NUMBER_PLATE_TEXT(Vehicle vehicle);
 ```
 
 ## Parameters
-* **vehicle**: 
+* **vehicle**: The target vehicle
 
 ## Return value
 Returns the license plate text from a vehicle. 8 chars maximum.
